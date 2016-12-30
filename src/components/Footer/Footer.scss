@@ -1,0 +1,61 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0;
+  height: 80px;
+  margin: 0;
+}
+
+.bg-footer-bottom-half {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  background: rgb(191, 255, 207); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(0deg, rgb(191, 255, 207), rgb(191, 254, 210)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(0deg, rgb(191, 255, 207), rgb(191, 254, 210)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(0deg, rgb(191, 255, 207), rgb(191, 254, 210)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(0deg, rgb(191, 255, 207), rgb(191, 254, 210)); /* Standard syntax */
+  z-index: -1;
+}
+
+.bg-footer-top-half {
+  position: fixed;
+  bottom: 40px;
+  right: 0;
+  left: 0;
+  height: 40px;
+  background: blue;
+  background: rgb(191, 254, 210); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(0deg, rgba(191, 254, 210, 1), rgba(192, 254, 213, 0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(0deg, rgba(191, 254, 210, 1), rgba(192, 254, 213, 0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(0deg, rgba(191, 254, 210, 1), rgba(192, 254, 213, 0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(0deg, rgba(191, 254, 210, 1), rgba(192, 254, 213, 0)); /* Standard syntax */
+  z-index: -1;
+}
+
+.footer-list {
+  list-style-type: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+}
+
+.svg-link img {
+  width: 3em;
+  transition: width ease-out 250ms;
+}
+
+.svg-link img:hover {
+  width: 3.5em;
+}

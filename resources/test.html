@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+
+
+        <div class="container" id="code-container">
+            <div id="code-label">projects</div>
+            <div id="code-top-left" class="code"></div>
+            <div id="code-bottom-left" class="code"></div>
+            <div id="code-middle" class="code"></div>
+            <div id="code-top-right" class="code"></div>
+            <div id="code-bottom-right" class="code"></div>
+        </div>
+
+
+        <style>
+            #ruler {
+                /*background-color: grey;*/
+                height: 1px;
+                width: 600px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            .container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 120px;
+                height: 65px;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                transition: 0.4s;
+                cursor: pointer;
+            }
+
+            
+            @keyframes pulse {
+                0% {background-color: black;}
+                50% {background-color: transparent;}
+                100% {background-color: black;}
+            }
+
+            .code {
+                width: 35px;
+                height: 5px;
+                background-color: black;
+                margin: 6px 0;
+                transition: 0.4s;
+            }
+            #code-top-left {
+                -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                transform: rotate(-45deg) translate(-9px, 6px);
+            }
+            #code-bottom-left {
+                -webkit-transform: rotate(45deg) translate(16px, 16px);
+                transform: rotate(45deg) translate(16px, 16px);
+            }
+            #code-middle {
+                width: 65px;
+                transform: rotate(125deg) translate(-16px, -20px);
+            }
+            #code-top-right {
+                -webkit-transform: rotate(45deg) translate(45px, -75px);
+                transform: rotate(45deg) translate(45px, -75px);
+            }
+            #code-bottom-right {
+                -webkit-transform: rotate(-45deg) translate(66px, 52px);
+                transform: rotate(-45deg) translate(66px, 52px);
+            }
+            #code-label {
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                position: absolute;
+                display: none;
+                transform: translate(140px, 0px);
+                font-size: 45px;
+            }
+
+            .container:hover #code-top-left {
+                transform: rotateY(180deg) rotateZ(315deg) translate(-68px, -52px);
+            }
+            .container:hover #code-bottom-left {
+                transform: rotateY(180deg) rotateZ(45deg) translate(-42px, 75px);
+            }
+            .container:hover #code-middle {
+                transform: rotateZ(180deg) rotateX(180deg) translate(-120px, 25px);
+                -webkit-animation: pulse 1s ease-out;
+                -webkit-animation-iteration-count: infinite; 
+                animation: pulse 1s infinite;
+                width: 190px; /* length of the word */
+            }
+            .container:hover #code-label {
+                display: block;
+            }
+            .container:hover {
+                width: 310px;
+                padding-right: 75px;
+            }
+        </style>
+    </body>
+</html>

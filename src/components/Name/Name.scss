@@ -1,0 +1,104 @@
+.name-wrapper {
+  position: relative;
+  width: 26vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.name-initial-state, .name-start-state, .name-final-state {
+  position: relative;
+  width: 26vw;
+  height: 30vw;
+}
+
+.name-initial-state img, .name-start-state img, .name-final-state img {
+  position: absolute;
+  width: 15vw;
+}
+
+.p-initial, .p-start, .p-final {
+  top: 11.9vw;
+  left: 7.53vw;
+}
+
+.a-initial {
+  top: 11.9vw;
+  left: 0;
+}
+
+.a-start {
+  top: 11.9vw;
+  left: 0;
+
+  -webkit-transition: transform 1s ease-in-out 500ms;
+  -moz-transition: transform 1s ease-in-out 500ms;
+  -ms-transition: transform 1s ease-in-out 500ms;
+  -o-transition: transform 1s ease-in-out 500ms;
+  transition: transform 1s ease-in-out 500ms;
+
+  -webkit-transform: translateY(-11.9vw);
+  -moz-transform: translateY(-11.9vw);
+  -ms-transform: translateY(-11.9vw);
+  -o-transform: translateY(-11.9vw);
+  transform: translateY(-11.9vw);
+}
+
+.a-final {
+  top: 0;
+  left: 0;
+}
+
+.first-initial, .first-start {
+  position: absolute;
+  font-size: 6.5vw;
+  color: #4c4c4c;
+  top: 7.5vw;
+  left: 8vw;
+  display: none;
+}
+
+.first-final {
+  position: absolute;
+  font-size: 6.5vw;
+  color: #4c4c4c;
+  top: 7.5vw;
+  left: 8vw;
+  display: block;
+}
+
+.last-initial, .last-start {
+  position: absolute;
+  font-size: 6.5vw;
+  color: #4c4c4c;
+  top: 19.8vw;
+  left: 8vw;
+  display: none;
+}
+
+.last-final {
+  position: absolute;
+  font-size: 6.5vw;
+  color: #4c4c4c;
+  top: 19.8vw;
+  left: 8vw;
+  display: block;
+}
+
+.fading-effect {
+    -moz-animation: fadeInRight 800ms ease-in; /* Firefox */
+    -webkit-animation: fadeInRight 800ms ease-in; /* Safari and Chrome */
+    -ms-animation: fadeInRight 800ms ease-in; /* IE10 */
+    -o-animation: fadeInRight 800ms ease-in; /* Opera */
+    animation: fadeInRight 800ms ease-in;
+}
+
+@keyframes fadeInRight {
+   0% {
+      opacity: 0;
+      transform: translateX(2vw);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}

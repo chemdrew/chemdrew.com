@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+
+        <div class="container" id="code-container">
+            <div id="social-icons">
+                <img id="social-icon-facebook" class="social-icon" src="icons/facebook-black.png"/>
+                <img id="social-icon-twitter" class="social-icon" src="icons/twitter-black.png"/>
+                <img id="social-icon-linkedin" class="social-icon" src="icons/linkedin-black.png"/>
+                <img id="social-icon-snapchat" class="social-icon" src="icons/snapchat-black.png"/>
+                <img id="social-icon-spotify" class="social-icon" src="icons/spotify-black.png"/>
+            </div>
+            <div id="social-monitor-wrapper">
+                <img id="social-monitor" src="monitor.png"/>
+                <div id="social-monitor-screen"></div>
+            </div>
+        </div>
+
+
+
+        <style>
+            #ruler {
+                /*background-color: grey;*/
+                height: 1px;
+                width: 600px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            .container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 75px;
+                height: 75px;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                transition: 0.4s;
+                cursor: pointer;
+            }
+
+            #social-icons {
+                display: none;
+                width: 336px;
+            }
+
+            .social-icon {
+                /*z-index: 10;*/
+            }
+
+            #social-monitor-wrapper {
+                width: 75px;
+                height: 75px;
+                transition: 0.4s;
+            }
+            #social-monitor {
+                width: 100%;
+                height: 100%;
+                transition: 0.4s;
+            }
+            #social-monitor-screen {
+                position: absolute;
+                transform: translate(0, -70px);
+                width: 75px;
+                height: 43px;
+                z-index: -1;
+            }
+
+            .container:hover {
+                width: 336px;
+            }
+            .container:hover #social-monitor-wrapper {
+                transform: translate(135px, 70px);
+                /*padding-top: 70px;*/
+            }
+            .container:hover #social-facebook {
+                padding-top: 70px;
+            }
+
+            #social-icon-facebook:hover #social-monitor-screen {
+                background-color: blue;
+            }
+        </style>
+    </body>
+</html>

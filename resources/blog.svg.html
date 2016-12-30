@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <!--https://cdn.thingiverse.com/assets/01/20/dc/5a/f7/cursive.svg-->
+        <!--<center>-->
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="1000" height="600" viewBox="0 -50 1100 700">
+                <defs>
+                    <animateMotion
+                    xlink:href  = "#illustration"
+                    begin       = "startbutton.mouseover"
+                    dur         = "2300ms"
+                    repeatCount = "1"
+                    fill = "freeze"
+
+                    calcMode="linear">
+                        <mpath xlink:href="#fontpath"/>
+                    </animateMotion>
+                    <symbol id="hl" class="wl">
+                        <rect x="0" y="55" width="1000" height="1"></rect>
+                    </symbol>
+                </defs>
+                <!-- Animation path -->
+                <path fill="none" stroke="none" id="fontpath"
+                d="M 0,118.06365 C 32.26996,102.7609 90.75437,27.659103 70.82485,23.891558 C 58.44976,21.552128 21.10211,121.66061 43.20521,117.65978 C 58.65797,114.8627 67.672,74.707534 67.672,74.707534 C 77.52099,77.737992 90.4635,75.907089 90.4635,75.907089 C 90,80.26663000000002 165.4574,31.191159999999996 141.76,22.03474 C 129.10528,17.145080000000007 100.941934,102.48324000000002 107.5001,112.20330999999999 C 114.807612,123.03123 134.32,106.30662999999998 134.32,106.30662999999998 C 212.19181000000003,66.19336999999999 169.90000999999995,79.00004000000001 164.42344000000003,88.97661 C 158.94687,98.95318 158.55283999999995,117.01445999999999 176.79516,116.87484 C 190.05438000000004,116.77422000000001 198.36202000000003,99.48285000000001 188.70142999999996,76.96857 C 256.28769,70.695853 256.28769,70.695853 256.28769,70.695853 C 233.61771999999996,71.96643900000001 220.77615000000003,80.658519 214.15030000000002,89.406301 C 191.44482000000005,119.38323 245.81203000000005,134.33546 256.28769,70.695853 C 256.10698,72.120256 229.73041,178.47249 212.28134999999997,161.55865 C 195.83887000000004,145.62454 245.87310000000002,110.98873 261.66657999999995,107.300364 z"/>
+                <g transform="translate(250,250)">
+                    <path fill="none" stroke="none" id="fontshape"
+                    d="M 0,118.06365 C 32.26996,102.7609 90.75437,27.659103 70.82485,23.891558 C 58.44976,21.552128 21.10211,121.66061 43.20521,117.65978 C 58.65797,114.8627 67.672,74.707534 67.672,74.707534 C 77.52099,77.737992 90.4635,75.907089 90.4635,75.907089 C 90,80.26663000000002 165.4574,31.191159999999996 141.76,22.03474 C 129.10528,17.145080000000007 100.941934,102.48324000000002 107.5001,112.20330999999999 C 114.807612,123.03123 134.32,106.30662999999998 134.32,106.30662999999998 C 212.19181000000003,66.19336999999999 169.90000999999995,79.00004000000001 164.42344000000003,88.97661 C 158.94687,98.95318 158.55283999999995,117.01445999999999 176.79516,116.87484 C 190.05438000000004,116.77422000000001 198.36202000000003,99.48285000000001 188.70142999999996,76.96857 C 256.28769,70.695853 256.28769,70.695853 256.28769,70.695853 C 233.61771999999996,71.96643900000001 220.77615000000003,80.658519 214.15030000000002,89.406301 C 191.44482000000005,119.38323 245.81203000000005,134.33546 256.28769,70.695853 C 256.10698,72.120256 229.73041,178.47249 212.28134999999997,161.55865 C 195.83887000000004,145.62454 245.87310000000002,110.98873 261.66657999999995,107.300364"/>
+                </g>
+
+                <!-- Button Start/Restart -->
+                <g id="startbutton" onclick="draw()">
+                    <rect id="btnStart" ry="5" rx="5" stroke-width="2" stroke="orange" fill="#024b30" height="40" width="215" y="7" x="770" />
+                    <text id="starttext" x="800" y="34" font-family="Arial" fill="orange" font-size="1.8em" font-style="italic" font-weight="lighter">start writing...</text>
+                </g>
+                <!-- Pen in a circle with tip in the middle of the circle -->
+                <g id="illustration" transform="translate(-205,374) rotate(-55)">
+                    <path id="st6" d="M539,309.152c0,1.021-0.827,1.848-1.848,1.848h-15.305c-1.021,0-1.848-0.827-1.848-1.848v-14.305c0-1.021,0.827-1.848,1.848-1.848h15.305c1.021,0,1.848,0.827,1.848,1.848V309.152z" fill="#ffaaaa"/>
+                    <rect x="381" y="305" id="st2" width="139" height="6" fill="#ffd42a"/>
+                    <rect x="381" y="299" id="st4" width="139" height="6" fill="#ffdd55"/>
+                    <rect x="381" y="293" id="st3" width="139" height="6" fill="#ffe680"/>
+                    <rect x="519" y="293" id="st0" width="7" height="18" fill="#999"/>
+                    <polygon id="st5" points="361.445,302.104 381,293 381,311.252"  fill="#cc9"/>
+                    <polygon id="st1" points="361.481,302.104 368,299.084 368,305.168" fill="black"/>
+                    <path id="st5" d="M381,299.084c0,0,2.848-1.362,2.848-3.042S381,293,381,293V299.084z" fill="#cc9"/>
+                    <path id="st5" d="M381,305.168c0,0,2.848-1.362,2.848-3.042S381,299.084,381,299.084V305.168z" fill="#cc9"/>
+                    <path id="st5" d="M381,311.252c0,0,2.848-1.362,2.848-3.042S381,305.168,381,305.168V311.252z" fill="#cc9"/>
+                </g>
+            </svg>
+        <!--</center>-->
+
+
+
+        <script>
+            var pen = document.getElementById("startbutton")
+
+            pen.onmouseover = function(){
+                console.log('yeah')
+                draw();
+            }
+
+            pen.onmouseout = function(){
+                // animateMotion
+                    // stop current
+                    // add attributes keyPoints="1;0" keyTimes="0;1"
+                    // start animation
+                        // on done -> remove keyPoints and keyTimes attributes
+                console.log('nah')
+            }
+
+            function draw(evt) {
+                var element = document.getElementById("fontshape");
+                element.classList.add("animatedfont");
+            }
+        </script>
+
+
+
+        <style>
+            .container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                /*width: 120px;
+                height: 65px;*/
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                transition: 0.4s;
+                cursor: pointer;
+            }
+
+            .wl{
+                fill: none;
+                stroke: black;
+                stroke-width: 1;
+            }
+            /* begin of the keyframe animation for text object with stroke-dashoffset-attribute */
+
+            .animatedfont {
+                fill:none;
+                stroke:black;
+                stroke-width:3;
+                stroke-linecap:round;
+                stroke-linejoin:round;
+                stroke-miterlimit:100;
+                stroke-dasharray: 2000;
+                stroke-dashoffset: 0;
+                -webkit-animation: dash 3.5s linear forwards;
+                -o-animation: dash 3.5s linear forwards;
+                -moz-animation: dash 3.5s linear forwards;
+                animation: dash 3.5s linear forwards;
+                -webkit-animation-play-state: running;
+            }
+            @-webkit-keyframes dash {
+                from {
+                    stroke-dashoffset: 2000;
+                }
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+        </style>
+    </body>
+</html>
