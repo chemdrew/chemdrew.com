@@ -24,7 +24,7 @@ export class Name extends React.Component {
         this.setState({
           lifecycle: 'final'
         })
-      }.bind(this), 2100)
+      }.bind(this), 1700)
     } else {
       this.setState({
         lifecycle: 'final'

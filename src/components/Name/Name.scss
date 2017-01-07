@@ -18,7 +18,7 @@
 
 .p-initial, .p-start, .p-final {
   top: 11.9vw;
-  left: 7.53vw;
+  left: 7.52vw;
 }
 
 .a-initial {
@@ -30,17 +30,11 @@
   top: 11.9vw;
   left: 0;
 
-  -webkit-transition: transform 1s ease-in-out 500ms;
-  -moz-transition: transform 1s ease-in-out 500ms;
-  -ms-transition: transform 1s ease-in-out 500ms;
-  -o-transition: transform 1s ease-in-out 500ms;
-  transition: transform 1s ease-in-out 500ms;
-
-  -webkit-transform: translateY(-11.9vw);
-  -moz-transform: translateY(-11.9vw);
-  -ms-transform: translateY(-11.9vw);
-  -o-transform: translateY(-11.9vw);
-  transform: translateY(-11.9vw);
+  -moz-animation: slideUp 1200ms ease-in-out 500ms; /* Firefox */
+  -webkit-animation: slideUp 1200ms ease-in-out 500ms; /* Safari and Chrome */
+  -ms-animation: slideUp 1200ms ease-in-out 500ms; /* IE10 */
+  -o-animation: slideUp 1200ms ease-in-out 500ms; /* Opera */
+  animation: slideUp 1200ms ease-in-out 500ms;
 }
 
 .a-final {
@@ -53,7 +47,7 @@
   font-size: 6.5vw;
   color: #4c4c4c;
   top: 7.5vw;
-  left: 8vw;
+  left: 8.4vw;
   display: none;
 }
 
@@ -62,7 +56,7 @@
   font-size: 6.5vw;
   color: #4c4c4c;
   top: 7.5vw;
-  left: 8vw;
+  left: 8.4vw;
   display: block;
 }
 
@@ -70,8 +64,8 @@
   position: absolute;
   font-size: 6.5vw;
   color: #4c4c4c;
-  top: 19.8vw;
-  left: 8vw;
+  top: 19.9vw;
+  left: 8.4vw;
   display: none;
 }
 
@@ -79,17 +73,17 @@
   position: absolute;
   font-size: 6.5vw;
   color: #4c4c4c;
-  top: 19.8vw;
-  left: 8vw;
+  top: 19.9vw;
+  left: 8.4vw;
   display: block;
 }
 
 .fading-effect {
-    -moz-animation: fadeInRight 800ms ease-in; /* Firefox */
-    -webkit-animation: fadeInRight 800ms ease-in; /* Safari and Chrome */
-    -ms-animation: fadeInRight 800ms ease-in; /* IE10 */
-    -o-animation: fadeInRight 800ms ease-in; /* Opera */
-    animation: fadeInRight 800ms ease-in;
+  -moz-animation: fadeInRight 800ms ease-in; /* Firefox */
+  -webkit-animation: fadeInRight 800ms ease-in; /* Safari and Chrome */
+  -ms-animation: fadeInRight 800ms ease-in; /* IE10 */
+  -o-animation: fadeInRight 800ms ease-in; /* Opera */
+  animation: fadeInRight 800ms ease-in;
 }
 
 @keyframes fadeInRight {
@@ -100,5 +94,14 @@
    100% {
       opacity: 1;
       transform: translateX(0);
+   }
+}
+
+@keyframes slideUp {
+   0% {
+      transform: translateY(0vw);
+   }
+   100% {
+      transform: translateY(-11.9vw);
    }
 }
